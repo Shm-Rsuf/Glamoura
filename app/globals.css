@@ -13,13 +13,14 @@
 
 /* LINK STYLES */
 .link-item {
-  @apply relative;
+  @apply relative duration-300;
 }
 
 .link-item::before {
-  @apply absolute content-[""] left-1/2 bottom-0 w-0 h-[1px] bg-dark -translate-x-1/2 -translate-y-1/2 duration-500;
+  @apply absolute content-[""] left-1/2 bottom-0 w-0 h-[1px] bg-accent1  -translate-x-1/2 -translate-y-1/2 duration-300;
 }
 
-.link-item:hover::before {
-  @apply w-full;
+.link-item:hover::before,
+.link-item:hover {
+  @apply w-full text-accent1;
 }
