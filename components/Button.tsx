@@ -8,7 +8,7 @@ const buttonVariants = cva("py-2 px-6 tracking-wider rounded-lg duration-300", {
       green: "bg-accent1 text-light  hover:bg-accent1/90",
       dark: "bg-dark text-light hover:bg-dark/90",
       light: "bg-light text-dark hover:bg-light/90",
-      ghost: "bg-transparent text-dark hover:dark/10",
+      ghost: "bg-transparent text-dark hover:bg-dark/10",
     },
   },
   defaultVariants: {
