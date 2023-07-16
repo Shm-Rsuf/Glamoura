@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={clsx(poppins.className, "bg-light, text-dark")}>
+      <body className={clsx(poppins.className, "bg-light text-dark")}>
         <Navbar />
         {children}
         <Footer />
