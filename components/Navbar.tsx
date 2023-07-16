@@ -1,3 +1,4 @@
+import { GiShoppingBag } from "react-icons/gi";
 import Link from "next/link";
 import Button from "./Button";
 
@@ -37,8 +38,14 @@ const Navbar = () => {
           </ul>
         </nav>
         {/* NAV RIGHT */}
-        <nav>
-          <Button href="/login" placeholder="Login" color={"green"} />
+        <nav className="flex items-center gap-2">
+          <Link href="/cart" className="text-xl relative">
+            <GiShoppingBag />
+            <span className="absolute top-[-10px] right-[10px] bg-rose-600 text-light w-4 h-4 rounded-full text-xs flex justify-center items-center">
+              0
+            </span>
+          </Link>
+          <Button href="/login" placeholder="Login" />
         </nav>
       </div>
     </header>
