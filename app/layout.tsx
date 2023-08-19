@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
-import clsx from "clsx";
+import { Bai_Jamjuree } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
-const poppins = Poppins({
+const baiJamjuree = Bai_Jamjuree({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["200", "300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -22,11 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={clsx(poppins.className, "bg-light text-dark")}>
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
+      <body className={baiJamjuree.className}>{children}</body>
     </html>
   );
 }
