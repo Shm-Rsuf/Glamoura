@@ -15,7 +15,7 @@ module.exports = {
         green: "#00B79F",
         blue: "#32B8CB",
         pink: "#ED7DC0",
-        voilet: "#7A60B3",
+        violet: "#7A60B3",
         orange: "#FF7A42",
       },
     },
