@@ -1,9 +1,9 @@
-import Button from "@/components/ui/Button";
+import Hero from "@/components/home/Hero";
 
 const HomePage = () => {
   return (
     <main className="">
-      <h2>HomePage</h2>
+      <Hero />
     </main>
   );
 };
