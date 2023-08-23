@@ -33,7 +33,7 @@ const Navbar = () => {
                 href="/"
                 className="lowercase text-3xl font-semibold text-pink"
               >
-                Sparkle Mart
+                Glamoura.
               </Link>
             </li>
           </ul>

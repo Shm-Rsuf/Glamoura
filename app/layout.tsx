@@ -11,7 +11,7 @@ const baiJamjuree = Bai_Jamjuree({
 });
 
 export const metadata: Metadata = {
-  title: "sparkle mart | Home",
+  title: "Glamoura | Home",
   description: "A mordern e-commerce website",
 };
 

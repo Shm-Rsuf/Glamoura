@@ -31,3 +31,8 @@
 .link-item::after:hover {
   @apply w-full;
 }
+
+/* TYPHOGRAPY STYLES */
+.headline-1 {
+  @apply text-8xl;
+}
