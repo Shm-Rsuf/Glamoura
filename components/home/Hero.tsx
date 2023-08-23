@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { Playfair_Display } from "next/font/google";
 import { cn } from "@/library/utils";
+import Link from "next/link";
 const playfair_Display = Playfair_Display({ subsets: ["latin"] });
 
 const Hero = () => {
   return (
-    <section className="wrapper section-padding h-[calc(100vh-5rem)]">
-      <div className="w-full h-full grid grid-rows-8 gap-5 items-center">
+    <section className="wrapper h-[calc(100vh-5rem)]">
+      <div className="w-full h-full grid grid-rows-8 gap-5 items-center relatives">
         {/* FIRST ROW */}
         <div className="w-full h-[6rem] grid grid-cols-[30%_auto] gap-20">
           <div className="w-full h-full overflow-hidden rounded-[0px_50px_0px_50px]">
@@ -90,14 +91,26 @@ const Hero = () => {
                   "lowercase font-normal headline-1"
                 )}
               >
-                Signature
-              </span>{" "}
-              Touch<span className="text-orange">.</span>
+                Signature{" "}
+              </span>
+              <span className="text-orange">Touch.</span>
             </h2>
           </div>
         </div>
 
         <hr className="border-gray" />
+        {/* packages button */}
+        <Link
+          href="/#packages"
+          className="bg-blue/70 backdrop-blur-md text-light w-32 h-32 rounded-full overflow-hidden flex justify-center items-center uppercase text-lg absolute bottom-20 left-[45%] z-[1] group shadow-lg shadow-dark/50 eq group-hover:shadow-blue/50"
+        >
+          <p className="z-[3]">Packages</p>
+          {/* filler 1*/}
+          <span className="z-[2] absolute top-full right-0 bottom-0 left-0 w-full h-1/2 bg-violet/70 eq group-hover:top-1/2"></span>
+
+          {/* filler 2*/}
+          <span className="z-[2] absolute -top-full right-0 bottom-0 left-0 w-full h-1/2 bg-violet/70 eq group-hover:top-0"></span>
+        </Link>
       </div>
     </section>
   );
