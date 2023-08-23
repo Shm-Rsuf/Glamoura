@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* BASE STYLES */
+main {
+  @apply mt-20;
+}
 /* COMMON STYLES */
 .wrapper {
   @apply container mx-auto px-5 md:px-0;
