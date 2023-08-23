@@ -1,9 +1,11 @@
 import Hero from "@/components/home/Hero";
+import Packages from "@/components/home/Packages";
 
 const HomePage = () => {
   return (
-    <main className="">
+    <main>
       <Hero />
+      <Packages />
     </main>
   );
 };
