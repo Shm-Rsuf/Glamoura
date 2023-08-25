@@ -51,7 +51,7 @@ const PackageItem: React.FC<PackageItemProps> = ({
           {category}
         </span>
         <h3 className='text-xl'>{title}</h3>
-        <hr />
+        <hr className='border-gray' />
         <p className='h-12 overflow-hidden'>
           {description.substring(0, 54)}...
         </p>
