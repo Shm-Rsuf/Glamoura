@@ -1,4 +1,4 @@
-import { cn } from "@/library/utils";
+import { cn } from '@/library/utils';
 
 interface SectionTitleProps {
   title: string;
@@ -9,16 +9,16 @@ interface SectionTitleProps {
 const SectionTitle: React.FC<SectionTitleProps> = ({
   title,
   subtitle,
-  color = "bg-red",
+  color = 'bg-red',
 }) => {
   return (
-    <div className="flex gap-2.5 items-center">
-      <span className={cn("w-4 h-20", color)}></span>
-      <div className="flex flex-col gap-2.5 items-start">
-        <span className="uppercase text-lg font-semibold tracking-[.35em]">
+    <div className='flex items-center gap-2.5'>
+      <span className={cn('h-20 w-4', color)}></span>
+      <div className='flex flex-col items-start gap-2.5'>
+        <span className='text-lg font-semibold uppercase tracking-[.35em]'>
           {title}
         </span>
-        <h3 className="text-5xl">{subtitle}</h3>
+        <h3 className='text-5xl'>{subtitle}</h3>
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ main {
 }
 
 .link-item::after {
-  @apply content-[""] absolute w-0 h-px bottom-0 left-1/2 -translate-x-1/2 bg-dark eq;
+  @apply eq absolute bottom-0 left-1/2 h-px w-0 -translate-x-1/2 bg-dark content-[""];
 }
 
 .link-item::after:hover {

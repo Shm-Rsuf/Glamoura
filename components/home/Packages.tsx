@@ -1,12 +1,12 @@
-import SectionTitle from "../shared/SectionTitle";
+import SectionTitle from '../shared/SectionTitle';
 
 const Packages = () => {
   return (
-    <section className="wrapper section-padding" id="packages">
+    <section className='wrapper section-padding' id='packages'>
       <SectionTitle
-        title="packages"
-        subtitle="Explore our package section"
-        color="bg-green"
+        title='packages'
+        subtitle='Explore our package section'
+        color='bg-green'
       />
     </section>
   );
