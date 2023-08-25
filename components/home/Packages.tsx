@@ -1,5 +1,7 @@
+import { data } from '@/data/packages';
 import HorizontalTab from '../shared/HorizontalTab';
 import SectionTitle from '../shared/SectionTitle';
+import PackageItem from './PackageItem';
 
 const Packages = () => {
   return (
@@ -9,10 +11,27 @@ const Packages = () => {
         subtitle='Explore our package section'
         color='bg-green'
       />
-      <HorizontalTab tabs={['tab 1', 'tab 2', 'tab 3']}>
-        <p>Tab 1 content</p>
-        <p>Tab 2 content</p>
-        <p>Tab 3 content</p>
+      <HorizontalTab tabs={['Wellness', 'Beauty', 'Events']}>
+        {/* Wellness */}
+        <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+          {data
+            ?.filter((item: any) => item.masterCategory === 'Wellness')
+            .map((item: any) => <PackageItem key={item.id} {...item} />)}
+        </div>
+
+        {/* Beauty */}
+        <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+          {data
+            ?.filter((item: any) => item.masterCategory === 'Beauty')
+            .map((item: any) => <PackageItem key={item.id} {...item} />)}
+        </div>
+
+        {/* Beauty */}
+        <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+          {data
+            ?.filter((item: any) => item.masterCategory === 'Events')
+            .map((item: any) => <PackageItem key={item.id} {...item} />)}
+        </div>
       </HorizontalTab>
     </section>
   );
