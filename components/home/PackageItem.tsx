@@ -57,7 +57,10 @@ const PackageItem: React.FC<PackageItemProps> = ({
         </p>
         <div className='mt-3 flex items-center justify-between gap-2.5'>
           <p className='text-xl'>{formateCurrency(price)}</p>
-          <Link href={`/packages/${id}`} className={buttonVariants()}>
+          <Link
+            href={`/packages/${id}`}
+            className={buttonVariants({ variant: 'violet' })}
+          >
             View Details
           </Link>
         </div>
