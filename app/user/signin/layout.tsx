@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Glamoura | Signin',
+  title: 'Glamoura | signin',
   description: 'A mordern e-commerce website',
 };
 

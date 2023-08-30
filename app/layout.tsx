@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import { Bai_Jamjuree } from 'next/font/google';
-import './globals.css';
 import Navbar from '@/components/shared/Navbar';
 import Footer from '@/components/shared/Footer';
 import { cn } from '@/library/utils';
+import './globals.css';
 
 const baiJamjuree = Bai_Jamjuree({
   subsets: ['latin'],
@@ -12,7 +12,7 @@ const baiJamjuree = Bai_Jamjuree({
 
 export const metadata: Metadata = {
   title: 'Glamoura | Home',
-  description: 'A mordern e-commerce website',
+  description: 'A beautyful salon and spa website.',
 };
 
 export default function RootLayout({

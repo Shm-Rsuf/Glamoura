@@ -1,8 +1,8 @@
+import { buttonVariants } from '../ui/Button';
+import { formateCurrency } from '@/utils/formateCurrency';
 import Image from 'next/image';
 import Link from 'next/link';
-import { buttonVariants } from '../ui/Button';
 import { cn } from '@/library/utils';
-import { formateCurrency } from '@/utils/formateCurrency';
 
 interface PackageItemProps {
   id: number;

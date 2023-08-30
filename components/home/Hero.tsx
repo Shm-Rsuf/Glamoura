@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import { Playfair_Display } from 'next/font/google';
+import Image from 'next/image';
 import { cn } from '@/library/utils';
 import Link from 'next/link';
 const playfair_Display = Playfair_Display({ subsets: ['latin'] });
