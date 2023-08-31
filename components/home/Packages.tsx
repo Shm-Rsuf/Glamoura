@@ -5,6 +5,7 @@ import PackageItem from './PackageItem';
 import Link from 'next/link';
 import { cn } from '@/library/utils';
 import { buttonVariants } from '../ui/Button';
+import { packageItem } from '@/types/packageItem';
 
 const Packages = () => {
   return (
