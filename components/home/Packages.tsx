@@ -19,28 +19,34 @@ const Packages = () => {
         {/* Wellness */}
         <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {data
-            ?.filter((item: any) => item.masterCategory === 'Wellness')
-            .sort((a: any, b: any) => a.price - b.price)
+            ?.filter((item: packageItem) => item.masterCategory === 'Wellness')
+            .sort((a: packageItem, b: packageItem) => a.price - b.price)
             .slice(0, 4)
-            .map((item: any) => <PackageItem key={item.id} {...item} />)}
+            .map((item: packageItem) => (
+              <PackageItem key={item.id} {...item} />
+            ))}
         </div>
 
         {/* Beauty */}
         <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {data
-            ?.filter((item: any) => item.masterCategory === 'Beauty')
-            .sort((a: any, b: any) => a.price - b.price)
+            ?.filter((item: packageItem) => item.masterCategory === 'Beauty')
+            .sort((a: packageItem, b: packageItem) => a.price - b.price)
             .slice(0, 4)
-            .map((item: any) => <PackageItem key={item.id} {...item} />)}
+            .map((item: packageItem) => (
+              <PackageItem key={item.id} {...item} />
+            ))}
         </div>
 
         {/* Beauty */}
         <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {data
-            ?.filter((item: any) => item.masterCategory === 'Events')
-            .sort((a: any, b: any) => a.price - b.price)
+            ?.filter((item: packageItem) => item.masterCategory === 'Events')
+            .sort((a: packageItem, b: packageItem) => a.price - b.price)
             .slice(0, 4)
-            .map((item: any) => <PackageItem key={item.id} {...item} />)}
+            .map((item: packageItem) => (
+              <PackageItem key={item.id} {...item} />
+            ))}
         </div>
       </HorizontalTab>
       <div className='flex justify-center'>
