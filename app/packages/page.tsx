@@ -1,17 +1,17 @@
-import AllPackages from '@/components/packages/AllPackages';
+import Packages from '@/components/home/Packages';
 import FooterMini from '@/components/shared/FooterMini';
 import Navbar from '@/components/shared/Navbar';
 
-const Packagespage = () => {
+const PackagesPage = () => {
   return (
     <>
       <Navbar />
       <main>
-        <AllPackages />
+        <Packages fromPackagePage />
       </main>
       <FooterMini />
     </>
   );
 };
 
-export default Packagespage;
+export default PackagesPage;
