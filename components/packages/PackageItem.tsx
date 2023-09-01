@@ -3,37 +3,24 @@ import { formateCurrency } from '@/utils/formateCurrency';
 import Image from 'next/image';
 import Link from 'next/link';
 import { cn } from '@/library/utils';
+import { packageItem } from '@/types/packageItem';
 
 interface PackageItemProps {
-  id: number;
-  title: string;
-  image: string;
-  category: string;
-  description: string;
-  price: number;
-  masterCategory: string;
+  packageItem: packageItem;
 }
-const PackageItem: React.FC<PackageItemProps> = ({
-  id,
-  title,
-  image,
-  category,
-  description,
-  price,
-  masterCategory,
-}) => {
+const PackageItem: React.FC<PackageItemProps> = ({ packageItem }) => {
   return (
     <div className='flex w-full flex-col gap-5'>
       {/* image */}
       <Link
-        href={`/packages/${id}`}
+        href={`/packages/${packageItem.id}`}
         className='group h-[15rem] w-full overflow-hidden rounded-xl border border-gray'
       >
         <Image
-          src={image}
+          src={packageItem.image}
           width={640}
           height={640}
-          alt={title}
+          alt={packageItem.title}
           priority
           className='eq h-full w-full object-cover brightness-90 group-hover:scale-125 group-hover:brightness-100'
         />
@@ -43,22 +30,22 @@ const PackageItem: React.FC<PackageItemProps> = ({
         <span
           className={cn(
             '!inline w-[5rem] py-[2px] text-center text-xs font-semibold tracking-wider',
-            masterCategory === 'Wellness' && 'bg-orange/80',
-            masterCategory === 'Beauty' && 'bg-blue/80',
-            masterCategory === 'Events' && 'bg-red/80'
+            packageItem.masterCategory === 'Wellness' && 'bg-orange/80',
+            packageItem.masterCategory === 'Beauty' && 'bg-blue/80',
+            packageItem.masterCategory === 'Events' && 'bg-red/80'
           )}
         >
-          {category}
+          {packageItem.category}
         </span>
-        <h3 className='text-xl'>{title}</h3>
+        <h3 className='text-xl'>{packageItem.title}</h3>
         <hr className='border-gray' />
         <p className='h-12 overflow-hidden'>
-          {description.substring(0, 54)}...
+          {packageItem.description.substring(0, 54)}...
         </p>
         <div className='mt-3 flex items-center justify-between gap-2.5'>
-          <p className='text-xl'>{formateCurrency(price)}</p>
+          <p className='text-xl'>{formateCurrency(packageItem.price)}</p>
           <Link
-            href={`/packages/${id}`}
+            href={`/packages/${packageItem.id}`}
             className={buttonVariants({ variant: 'violet' })}
           >
             View Details

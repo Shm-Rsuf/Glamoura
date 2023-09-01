@@ -32,7 +32,7 @@ const Packages: React.FC<PackagesProps> = ({ fromPackagePage }) => {
               .sort((a: packageItem, b: packageItem) => a.price - b.price)
               .slice(0, 4)
               .map((item: packageItem) => (
-                <PackageItem key={item.id} {...item} />
+                <PackageItem key={item.id} packageItem={item} />
               ))}
 
           {fromPackagePage &&
@@ -42,7 +42,7 @@ const Packages: React.FC<PackagesProps> = ({ fromPackagePage }) => {
               )
               .sort((a: packageItem, b: packageItem) => a.price - b.price)
               .map((item: packageItem) => (
-                <PackageItem key={item.id} {...item} />
+                <PackageItem key={item.id} packageItem={item} />
               ))}
         </div>
 
@@ -54,7 +54,7 @@ const Packages: React.FC<PackagesProps> = ({ fromPackagePage }) => {
               .sort((a: packageItem, b: packageItem) => a.price - b.price)
               .slice(0, 4)
               .map((item: packageItem) => (
-                <PackageItem key={item.id} {...item} />
+                <PackageItem key={item.id} packageItem={item} />
               ))}
 
           {fromPackagePage &&
@@ -62,7 +62,7 @@ const Packages: React.FC<PackagesProps> = ({ fromPackagePage }) => {
               ?.filter((item: packageItem) => item.masterCategory === 'Beauty')
               .sort((a: packageItem, b: packageItem) => a.price - b.price)
               .map((item: packageItem) => (
-                <PackageItem key={item.id} {...item} />
+                <PackageItem key={item.id} packageItem={item} />
               ))}
         </div>
 
@@ -74,7 +74,7 @@ const Packages: React.FC<PackagesProps> = ({ fromPackagePage }) => {
               .sort((a: packageItem, b: packageItem) => a.price - b.price)
               .slice(0, 4)
               .map((item: packageItem) => (
-                <PackageItem key={item.id} {...item} />
+                <PackageItem key={item.id} packageItem={item} />
               ))}
 
           {fromPackagePage &&
@@ -82,7 +82,7 @@ const Packages: React.FC<PackagesProps> = ({ fromPackagePage }) => {
               ?.filter((item: packageItem) => item.masterCategory === 'Events')
               .sort((a: packageItem, b: packageItem) => a.price - b.price)
               .map((item: packageItem) => (
-                <PackageItem key={item.id} {...item} />
+                <PackageItem key={item.id} packageItem={item} />
               ))}
         </div>
       </HorizontalTab>
