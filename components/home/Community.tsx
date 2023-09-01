@@ -39,6 +39,14 @@ const Community = () => {
               className='h-full w-full object-cover'
             />
           </div>
+          {/* upper right text */}
+          <h2 className='absolute -top-[25%] left-[40%] whitespace-nowrap text-6xl font-semibold uppercase'>
+            Join glamoura
+          </h2>
+          {/* bottom left text */}
+          <h2 className=' absolute -bottom-[25%] right-[40%] text-6xl font-semibold uppercase'>
+            Community
+          </h2>
         </div>
       </div>
     </section>

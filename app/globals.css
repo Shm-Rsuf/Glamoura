@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 /* BASE STYLES */
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
+
 main {
   @apply mt-20;
 }
