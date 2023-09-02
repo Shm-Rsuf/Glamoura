@@ -12,7 +12,7 @@ const Hero = () => {
         <div className='grid h-[6rem] w-full grid-cols-[30%_auto] gap-20'>
           <div className='h-full w-full overflow-hidden rounded-[0px_50px_0px_50px]'>
             <Image
-              src='https://images.pexels.com/photos/17843272/pexels-photo-17843272/free-photo-of-a-woman-working-as-an-engineer.jpeg?auto=compress&cs=tinysrgb&w=600'
+              src='https://images.pexels.com/photos/17843272/pexels-photo-17843272/free-photo-of-a-woman-working-as-an-engineer.jpeghttps://images.pexels.com/photos/2764972/pexels-photo-2764972.jpeg?auto=compress&cs=tinysrgb&w=600'
               alt='woman image'
               width={640}
               height={360}
@@ -38,7 +38,7 @@ const Hero = () => {
           </div>
           <div className='h-full w-full overflow-hidden rounded-[50px_0px_50px_50px]'>
             <Image
-              src='https://images.pexels.com/photos/17843272/pexels-photo-17843272/free-photo-of-a-woman-working-as-an-engineer.jpeg?auto=compress&cs=tinysrgb&w=600'
+              src='https://images.pexels.com/photos/3997982/pexels-photo-3997982.jpeg'
               alt='woman image'
               width={320}
               height={180}
@@ -61,7 +61,7 @@ const Hero = () => {
           </div>
           <div className='h-full w-full overflow-hidden rounded-[0px_50px_0px_50px]'>
             <Image
-              src='https://images.pexels.com/photos/17843272/pexels-photo-17843272/free-photo-of-a-woman-working-as-an-engineer.jpeg?auto=compress&cs=tinysrgb&w=600'
+              src='https://images.pexels.com/photos/7219901/pexels-photo-7219901.jpeg'
               alt='woman image'
               width={1020}
               height={640}
@@ -76,7 +76,7 @@ const Hero = () => {
         <div className='grid h-[6rem] w-full grid-cols-[35%_auto] gap-20'>
           <div className='h-full w-full overflow-hidden rounded-[50px_50px_50px_0px]'>
             <Image
-              src='https://images.pexels.com/photos/17843272/pexels-photo-17843272/free-photo-of-a-woman-working-as-an-engineer.jpeg?auto=compress&cs=tinysrgb&w=600'
+              src='https://images.pexels.com/photos/6663456/pexels-photo-6663456.jpeg'
               alt='woman image'
               width={1020}
               height={640}
