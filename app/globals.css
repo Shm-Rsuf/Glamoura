@@ -45,3 +45,7 @@ main {
 .headline-1 {
   @apply text-8xl;
 }
+
+.headline-2 {
+  @apply text-7xl;
+}

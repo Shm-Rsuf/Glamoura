@@ -56,7 +56,7 @@ const Hero = () => {
         <div className='grid h-[6rem] w-full grid-cols-[45%_auto] gap-20'>
           <div className='flex-center h-full w-full'>
             <h2 className='headline-1 font-semibold uppercase'>
-              Glamoura<span className='text-green'>&apos;s</span>
+              Glamoura&apos;<span className='text-blue'>s</span>
             </h2>
           </div>
           <div className='h-full w-full overflow-hidden rounded-[0px_50px_0px_50px]'>
