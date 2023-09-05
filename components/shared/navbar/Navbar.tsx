@@ -1,9 +1,7 @@
-import { auth, UserButton } from '@clerk/nextjs';
 import Link from 'next/link';
 import { buttonVariants } from '../../ui/Button';
 
 const Navbar = async () => {
-  const { userId } = await auth();
   return (
     <header className='fixed left-0 right-0 top-0 z-[100] flex h-20 items-center border-b border-gray bg-white/80 backdrop-blur-md'>
       <div className='wrapper grid grid-cols-3 items-center gap-20'>
@@ -54,16 +52,12 @@ const Navbar = async () => {
               </Link>
             </li>
             <li>
-              {userId ? (
-                <UserButton afterSignOutUrl='/' />
-              ) : (
-                <Link
-                  href='/sign-in'
-                  className={buttonVariants({ variant: 'ocean' })}
-                >
-                  Sign in
-                </Link>
-              )}
+              <Link
+                href='/sign-in'
+                className={buttonVariants({ variant: 'ocean' })}
+              >
+                Sign in
+              </Link>
             </li>
           </ul>
         </nav>
