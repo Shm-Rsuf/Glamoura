@@ -30,7 +30,7 @@ const Packages: React.FC<PackagesProps> = ({ fromPackagePage }) => {
                 (item: packageItem) => item.masterCategory === 'Wellness'
               )
               .sort((a: packageItem, b: packageItem) => a.price - b.price)
-              .slice(0, 4)
+              .slice(0, 3)
               .map((item: packageItem) => (
                 <PackageItem key={item.id} packageItem={item} />
               ))}
@@ -52,7 +52,7 @@ const Packages: React.FC<PackagesProps> = ({ fromPackagePage }) => {
             data
               ?.filter((item: packageItem) => item.masterCategory === 'Beauty')
               .sort((a: packageItem, b: packageItem) => a.price - b.price)
-              .slice(0, 4)
+              .slice(0, 3)
               .map((item: packageItem) => (
                 <PackageItem key={item.id} packageItem={item} />
               ))}
@@ -72,7 +72,7 @@ const Packages: React.FC<PackagesProps> = ({ fromPackagePage }) => {
             data
               ?.filter((item: packageItem) => item.masterCategory === 'Events')
               .sort((a: packageItem, b: packageItem) => a.price - b.price)
-              .slice(0, 4)
+              .slice(0, 3)
               .map((item: packageItem) => (
                 <PackageItem key={item.id} packageItem={item} />
               ))}
