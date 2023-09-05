@@ -19,7 +19,7 @@ const PackageItem: React.FC<PackageItemProps> = ({ packageItem }) => {
         <Image
           src={packageItem.image}
           width={640}
-          height={640}
+          height={360}
           alt={packageItem.title}
           priority
           className='eq h-full w-full object-cover brightness-90 group-hover:scale-125 group-hover:brightness-100'
