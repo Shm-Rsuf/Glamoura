@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Glamoura | package details',
+  title: 'Glamoura | products details',
 };
 
-export default function PackageDatailsLayout({
+export default function ProductsDatailsLayout({
   children,
 }: {
   children: React.ReactNode;
