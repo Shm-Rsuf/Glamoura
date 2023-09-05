@@ -18,7 +18,7 @@ const Packages: React.FC<PackagesProps> = ({ fromPackagePage }) => {
       <SectionTitle
         title='packages'
         subtitle='Explore our package section'
-        color='bg-green'
+        color='bg-violet'
       />
       {/* Packages */}
       <HorizontalTab tabs={['Wellness', 'Beauty', 'Events']}>
