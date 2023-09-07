@@ -5,16 +5,15 @@ import { data } from '@/data/products';
 import { productItem } from '@/types/productItem';
 
 const ProductsDeatilsPage = ({ params }: { params: { id: string } }) => {
-  const id = +params.id;
-  const productItem = data.find((item: productItem) => item.id === id);
-  if (!productItem) {
+  const product = data.find((item: productItem) => item.id === +params.id);
+  if (!product) {
     return null;
   }
   return (
     <>
       <Navbar />
       <main>
-        <ProductDetailsSection productItem={productItem} />
+        <ProductDetailsSection product={product} />
       </main>
       <FooterMini />
     </>

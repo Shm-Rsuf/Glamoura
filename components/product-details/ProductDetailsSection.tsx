@@ -1,13 +1,13 @@
 import { productItem } from '@/types/productItem';
 
 interface ProductDetailsSectionProps {
-  productItem: productItem;
+  product: productItem;
 }
 
 const ProductDetailsSection: React.FC<ProductDetailsSectionProps> = ({
-  productItem,
+  product,
 }) => {
-  return <div>{productItem.title}</div>;
+  return <div>{product.title}</div>;
 };
 
 export default ProductDetailsSection;
