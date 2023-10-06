@@ -3,7 +3,7 @@ import { cn } from '@/library/utils';
 import React from 'react';
 
 export const buttonVariants = cva(
-  'inline-block text-center px-4 py-2 rounded-lg border eq font-medium active:scale-110 disabled:border-gray disabled:text-dark/50 disabled:bg-gray disabled:cursor-not-allowed',
+  'inline-block text-center px-4 py-2 rounded-lg border eq font-medium active:scale-110 disabled:border-gray disabled:text-dark/50 disabled:bg-gray disabled:cursor-not-allowed whitespace-nowrap',
   {
     variants: {
       variant: {
