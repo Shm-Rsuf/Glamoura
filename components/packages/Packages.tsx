@@ -5,7 +5,7 @@ import PackageItem from './PackageItem';
 import Link from 'next/link';
 import { cn } from '@/library/utils';
 import { buttonVariants } from '../ui/Button';
-import { packageItem } from '@/types/packageItem';
+import { packageItem } from '@/types/beautyPackage';
 import { FC } from 'react';
 
 interface PackagesProps {

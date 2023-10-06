@@ -2,7 +2,7 @@ import { data } from '@/data/gallery';
 import SectionTitle from '../shared/SectionTitle';
 import { cn } from '@/library/utils';
 import Image from 'next/image';
-import Link from 'next/link';
+import { galleryType } from '@/types/gallery';
 
 const Gallery = () => {
   return (
@@ -16,7 +16,7 @@ const Gallery = () => {
 
         {/* grid parent */}
         <div className='gallery-grid_parent relative h-screen w-full gap-10'>
-          {data.map((item: any) => (
+          {data.map((item: galleryType) => (
             <div
               key={item.id}
               className={cn(
@@ -28,8 +28,8 @@ const Gallery = () => {
                 <Image
                   src={item.src}
                   alt={item.alt}
-                  width={360}
-                  height={360}
+                  width={item.width}
+                  height={item.height}
                   priority
                   className='h-full w-full object-cover'
                 />

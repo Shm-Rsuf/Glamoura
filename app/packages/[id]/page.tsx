@@ -2,7 +2,7 @@ import PackageDetailsSection from '@/components/package-details/PackageDetailsSe
 import FooterMini from '@/components/shared/footer/FooterMini';
 import Navbar from '@/components/shared/navbar/Navbar';
 import { data } from '@/data/packages';
-import { packageItem } from '@/types/packageItem';
+import { packageItem } from '@/types/beautyPackage';
 
 const PackageDetailsPage = ({ params }: { params: { id: string } }) => {
   const id = +params.id;

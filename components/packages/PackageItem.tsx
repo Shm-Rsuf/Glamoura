@@ -3,7 +3,7 @@ import { formateCurrency } from '@/utils/formateCurrency';
 import Image from 'next/image';
 import Link from 'next/link';
 import { cn } from '@/library/utils';
-import { packageItem } from '@/types/packageItem';
+import { packageItem } from '@/types/beautyPackage';
 
 interface PackageItemProps {
   packageItem: packageItem;
